@@ -1,0 +1,47 @@
+//Written by 多语言翻译管理系统 
+//Wed Jul 06 2016 14:33:10 GMT+0800 (CST)
+//如有问题请联系去疾
+"APCommonUI:%.0f秒后重试" = "%.0f S";
+"APCommonUI:APCheckBox.checked" = "Выбрано:";
+"APCommonUI:APCheckBox.unchecked" = "Не выбрано:";
+"APCommonUI:APExceptionView.alert" = "Попробуйте позже";
+"APCommonUI:APExceptionView.empty" = "Нет информации";
+"APCommonUI:APExceptionView.networkError" = "Низкая скорость сети \n Проверьте сетевые настройки или попробуйте снова";
+"APCommonUI:APNextPagePullView.click&load" = "Загрузить";
+"APCommonUI:APNumericKeyboard.back&delete" = "Назад";
+"APCommonUI:APNumericKeyboard.disappear" = "Скрыть";
+"APCommonUI:APNumericKeyboard.dismissKeyboard" = "Скрыть";
+"APCommonUI:APSecurityCode.securityCode" = "Код";
+"APCommonUI:APToastView.load" = "Загрузка %.0f%%";
+"APCommonUI:EGORefresh.current" = "Текущее время ";
+"APCommonUI:EGORefresh.last" = "Последнее";
+"APCommonUI:EGORefresh.pull&load" = "Вверх";
+"APCommonUI:EGORefresh.pull&refresh" = "Вниз";
+"APCommonUI:EGORefresh.release&refresh" = "Отпустите";
+"APCommonUI:Login.forgotPassword" = "Забыли пароль?";
+"APCommonUI:Login.password" = "Пароль для входа";
+"APCommonUI:SMS.code" = "СМС-код";
+"APCommonUI:SMS.inputCode" = "Ввести код";
+"APCommonUI:SMS.resendAfter" = "%.0f S";
+"APCommonUI:SMS.resendCode" = "Повторно";
+"APCommonUI:SMS.sendCode" = "Отправить";
+"APCommonUI:什么都没有" = "Ничего";
+"APCommonUI:再试一次" = "Попробовать еще раз";
+"APCommonUI:刷新" = "Обновить";
+"APCommonUI:加载中" = "Загрузка…";
+"APCommonUI:取消" = "Отмена";
+"APCommonUI:完成" = "ОК";
+"APCommonUI:忙不过来了，客官请稍候" = "Система занята";
+"APCommonUI:搜索" = "Поиск";
+"APCommonUI:注册" = "Регистрация";
+"APCommonUI:清除" = "Очистить";
+"APCommonUI:登录" = "Вход";
+"APCommonUI:确定" = "ОК";
+"APCommonUI:网络不给力" = "Слабая сеть";
+"APCommonUI:网络无法连接" = "Нет соединения с сетью";
+"APCommonUI:请检查你的手机是否联网" = "Проверьте подключение";
+"APCommonUI:返回" = "Назад";
+"APCommonUI:重新尝试" = "Попробовать еще раз";
+"APCommonUI:重试" = "Снова";
+"APCommonUI:顾客太多，客官请稍候" = "Слишком много покупателей, подождите";
+

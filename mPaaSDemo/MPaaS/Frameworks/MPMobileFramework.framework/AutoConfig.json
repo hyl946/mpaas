@@ -1,0 +1,237 @@
+{
+    "class": "DTFrameworkInterface",
+    "header": "<MPMobileFramework/DTFrameworkInterface.h>",
+    "title": {
+        "chinese": "客户端框架",
+        "english": "Client Framework"
+    },
+    "actions": {
+        "tab" : [
+            {
+                "type": "resource",
+                "files": [
+                      "MobileRuntime.plist"
+                ]
+            },
+            {
+                    "type": "source",
+                    "files": [
+                              "MPLauncherAppDelegate.h",
+                              "MPLauncherAppDelegate.m",
+                              "MPTabBarController.h",
+                              "MPTabBarController.m"
+                              ]
+            },
+            {
+                    "type": "micro_application",
+                    "params": {
+                        "delegate": "MPLauncherAppDelegate",
+                        "description": "Launcher",
+                        "name": "Launcher",
+                        "set_launcher": true
+                    }
+            },
+            {
+                    "type": "main_use_framework"
+            }
+        ],
+        "drawer" : [
+            {
+                "type": "resource",
+                "files": [
+                      "MobileRuntime.plist"
+                ]
+            },
+            {
+                    "type": "source",
+                    "files": [
+                              "MPDrawerLauncherAppDelegate.h",
+                              "MPDrawerLauncherAppDelegate.m",
+                              "MPDrawerController.h",
+                              "MPDrawerController.m",
+                              "MPDrawerLeftView.h",
+                              "MPDrawerLeftView.m",
+                              "MPDrawerMainViewController.h",
+                              "MPDrawerMainViewController.m"
+                              ]
+            },
+            {
+                    "type": "micro_application",
+                    "params": {
+                        "delegate": "MPDrawerLauncherAppDelegate",
+                        "description": "Launcher",
+                        "name": "Launcher",
+                        "set_launcher": true
+                    }
+            },
+            {
+                    "type": "main_use_framework"
+            }
+        ],
+        "single" : [
+            {
+                "type": "resource",
+                "files": [
+                      "MobileRuntime.plist"
+                ]
+            },
+            {
+                    "type": "source",
+                    "files": [
+                              "MPNavigationLauncherAppDelegate.h",
+                              "MPNavigationLauncherAppDelegate.m",
+                              "MPNavigationController.h",
+                              "MPNavigationController.m"
+                              ]
+            },
+            {
+                    "type": "micro_application",
+                    "params": {
+                        "delegate": "MPNavigationLauncherAppDelegate",
+                        "description": "Launcher",
+                        "name": "Launcher",
+                        "set_launcher": true
+                    }
+            },
+            {
+                    "type": "main_use_framework"
+            }
+        ],
+        "empty" : [
+            {
+                "type": "resource",
+                "files": [
+                      "MobileRuntime.plist"
+                ]
+            },
+            {
+                    "type": "source",
+                    "files": [
+                              "MPAppDelegate.h",
+                              "MPAppDelegate.m",
+                              "MPViewController.h",
+                              "MPViewController.m"
+                              ]
+            },
+            {
+                    "type": "micro_application",
+                    "params": {
+                        "delegate": "MPAppDelegate",
+                        "description": "Launcher",
+                        "name": "Launcher",
+                        "set_launcher": true
+                    }
+            },
+            {
+                    "type": "main_use_framework"
+            }
+        ]
+    },
+    "entries": [
+                    {
+                        "title": {
+                            "chinese": "开启日志报活",
+                            "english": "Enable Log Report-Active"
+                        },
+                        "declaration": "- (BOOL)shouldLogReportActive",
+                        "description": {
+                            "chinese": "是否使用远程日志记录默认的报活数据。报活分两种方式，一种是使用远程日志埋点，一种是使用RPC。\n如果选择使用日志报活，必须同时安装日志模块（MPRemoteLogging）才可使报活生效。\n默认返回YES，如果不需要关闭此功能，可以点击右边的删除按钮去掉该配置项。",
+                            "english": "A switch controlling whether to use remote log system to record activating data. There are two kinds of reporting active. One is using remote log, and another is using RPC.\nThis function works only when MPRemoteLogging is also installed.\nDefault is YES, and if you do not need it, click the delete button on right side to remove this entry."
+                        },
+                        "optional": true,
+                        "type": "option",
+                        "default": "YES",
+                        "options": [
+                            "YES",
+                            "NO"
+                        ]
+                    },
+                    {
+                        "title": {
+                            "chinese": "日志报活间隔",
+                            "english": "Log Report-Active Interval"
+                        },
+                        "declaration": "- (NSTimeInterval)logReportActiveMinInterval",
+                        "description": {
+                            "chinese": "当使用日志报活功能时，可以配置从后台切回前台的报活最小间隔时间。\n0表示每次从后台回前台，应用都会进行报活。",
+                            "english": "When log reporting-active is enabled, this configures the min interval(s) of reporting action for switching from background to foreground mode.\n0 means every time application enters foreground mode, it reports active status."
+                        },
+                        "optional": true,
+                        "type": "number",
+                        "default": "0"
+                    },
+                    {
+                        "title": {
+                            "chinese": "上报启动耗时",
+                            "english": "Report Boot-Up Time"
+                        },
+                        "declaration": "- (BOOL)shouldLogStartupConsumption",
+                        "description": {
+                            "chinese": "是否使用日志记录应用启动时间消耗。",
+                            "english": "A switch controlling whether to use remote log system to record application boot-up consumption."
+                        },
+                        "optional": true,
+                        "type": "option",
+                        "default": "YES",
+                        "options": [
+                            "YES",
+                            "NO"
+                        ]
+                    },
+                    {
+                        "title": {
+                            "chinese": "开启Hotpatch",
+                            "english": "Enable Hotpatch"
+                        },
+                        "declaration": "- (BOOL)shouldAutoactivateBandageKit",
+                        "description": {
+                            "chinese": "是否自动执行Hotpatch的逻辑，包括脚本运行，同步，下载。必须同时安装MPHotpatchSDK时才会生效。",
+                            "english": "A switch controlling whether to auto-activate hotpatch procedures, including scripts downloading, synchronizing, running and rollback. You should also install MPHotpatchSDK."
+                        },
+                        "optional": true,
+                        "type": "option",
+                        "default": "YES",
+                        "options": [
+                                    "YES",
+                                    "NO"
+                                    ]
+                    },
+                    {
+                        "title": {
+                            "chinese": "开启分享组件",
+                            "english": "Enable Shart Kit"
+                        },
+                        "declaration": "- (BOOL)shouldAutoactivateShareKit",
+                        "description": {
+                            "chinese": "接入了分享组件后，是否在框架里自动安装分享组件，并处理openURL事件。必须同时安装MPShareKit时才会生效。",
+                            "english": "A switch controlling whether to auto-activate share kit procedures including openURL handling. You should also install MPShareKit."
+                        },
+                        "optional": true,
+                        "type": "option",
+                        "default": "YES",
+                        "options": [
+                                    "YES",
+                                    "NO"
+                                    ]
+                    },
+                    {
+                        "title": {
+                            "chinese": "返回按钮文案样式",
+                            "english": "Navigation Back Style"
+                        },
+                        "declaration": "- (DTNavigationBarBackTextStyle)navigationBarBackTextStyle",
+                        "description": {
+                            "chinese": "指定UIViewController返回按钮文案样式。\n    DTNavigationBarBackTextStyleNone：完全不显示返回按钮的文本（present的窗口还是会显示“取消”）\n    DTNavigationBarBackTextStyleUniformBack：统一显示为“返回”\n    DTNavigationBarBackTextStyleAlipay：支付宝风格，Tab的下一级窗口，返回按钮显示Tab的名称，其它级别的窗口统一显示返回。",
+                            "english": "Specify text style of navigation bar back button.\n    DTNavigationBarBackTextStyleNone: Hide text of button, you can use a back image. But for presented UIViewController the button shows 'Cancel' text.    \nDTNavigationBarBackTextStyleUniformBack: Always shows 'Back'.\n    DTNavigationBarBackTextStyleAlipay: Alipay style."
+                        },
+                        "optional": true,
+                        "type": "option",
+                        "default": "DTNavigationBarBackTextStyleAlipay",
+                        "options": [
+                                    "DTNavigationBarBackTextStyleNone",
+                                    "DTNavigationBarBackTextStyleUniformBack",
+                                    "DTNavigationBarBackTextStyleAlipay"
+                                    ]
+                    }
+                ]
+}

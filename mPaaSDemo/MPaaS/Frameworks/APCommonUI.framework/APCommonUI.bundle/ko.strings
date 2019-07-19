@@ -1,0 +1,47 @@
+//Written by 多语言翻译管理系统 
+//Wed Jul 06 2016 14:33:10 GMT+0800 (CST)
+//如有问题请联系去疾
+"APCommonUI:%.0f秒后重试" = "%.0f초";
+"APCommonUI:APCheckBox.checked" = "이미 선택:";
+"APCommonUI:APCheckBox.unchecked" = "선택 되지않았음:";
+"APCommonUI:APExceptionView.alert" = "최악，틀린것 같음\n 서버 사용중, 잠간후 다시 시도하기";
+"APCommonUI:APExceptionView.empty" = "내용이 비었음";
+"APCommonUI:APExceptionView.networkError" = "네트 불량\n 네트 설정을 검사하거나 잠간후 다시 시도하기";
+"APCommonUI:APNextPagePullView.click&load" = "클릭 로딩";
+"APCommonUI:APNumericKeyboard.back&delete" = "나가기";
+"APCommonUI:APNumericKeyboard.disappear" = "숨김";
+"APCommonUI:APNumericKeyboard.dismissKeyboard" = "숫자 키보드를 숨기기";
+"APCommonUI:APSecurityCode.securityCode" = "확인 코드";
+"APCommonUI:APToastView.load" = "로딩 데이터%.0f%%";
+"APCommonUI:EGORefresh.current" = "현재 시간 ";
+"APCommonUI:EGORefresh.last" = "먼저번 갱신 ";
+"APCommonUI:EGORefresh.pull&load" = "풀업으로 더많이 로딩";
+"APCommonUI:EGORefresh.pull&refresh" = "풀다운 새로 고침";
+"APCommonUI:EGORefresh.release&refresh" = "석방하면 새로 고침";
+"APCommonUI:Login.forgotPassword" = "로그인 비밀번호 분실?";
+"APCommonUI:Login.password" = "로그인 비밀 번호";
+"APCommonUI:SMS.code" = "메시지 확인 코드";
+"APCommonUI:SMS.inputCode" = "메시지 확인 코드를 입력";
+"APCommonUI:SMS.resendAfter" = "%.0f초";
+"APCommonUI:SMS.resendCode" = "재전송";
+"APCommonUI:SMS.sendCode" = "확인 코드 발송";
+"APCommonUI:什么都没有" = "아무것도 없음";
+"APCommonUI:再试一次" = "다시 시도";
+"APCommonUI:刷新" = "새로 고침";
+"APCommonUI:加载中" = "로딩중…";
+"APCommonUI:取消" = "취소";
+"APCommonUI:完成" = "완성";
+"APCommonUI:忙不过来了，客官请稍候" = "너무 바쁘니, 잠간만";
+"APCommonUI:搜索" = "검색";
+"APCommonUI:注册" = "등록";
+"APCommonUI:清除" = "제거";
+"APCommonUI:登录" = "로그인";
+"APCommonUI:确定" = "확인";
+"APCommonUI:网络不给力" = "네트 불량";
+"APCommonUI:网络无法连接" = "네트 무효";
+"APCommonUI:请检查你的手机是否联网" = "당신의 휴대폰 인터넷 접속을 검사하기";
+"APCommonUI:返回" = "나가기";
+"APCommonUI:重新尝试" = "다시 시도";
+"APCommonUI:重试" = "재시도";
+"APCommonUI:顾客太多，客官请稍候" = "너무 많은 고객, 잠간만";
+

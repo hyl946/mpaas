@@ -1,0 +1,32 @@
+{
+    "class": "",
+    "header": "",
+    "title": {
+        "chinese": "Crash上报",
+        "english": "Crash Reporter"
+    },
+    "entries": [
+                    {
+                        "title": {
+                            "chinese": "开启Crash上报",
+                            "english": "Enable Crash Reporting"
+                        },
+                        "declaration": "",
+                        "description": {
+                            "chinese": "是否开启Crash上报功能。如果开启，MPaaS会自动修改 main 函数添加初始化方法。",
+                            "english": "A switch controlling whether to enable crash reporting. If on, MPaaS will automatically modify main function and insert crash reporting initialization codes."
+                        },
+                        "type": "option",
+                        "default": "YES",
+                        "options": [
+                            "YES",
+                            "NO"
+                        ],
+                        "option:YES": [
+                            {
+                               "type": "main_use_crashreporting",
+                            }
+                        ]
+                    }
+                ]
+}

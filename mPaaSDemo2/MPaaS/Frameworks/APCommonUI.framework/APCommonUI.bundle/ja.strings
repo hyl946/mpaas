@@ -1,0 +1,47 @@
+//Written by 多语言翻译管理系统 
+//Wed Jul 06 2016 14:33:10 GMT+0800 (CST)
+//如有问题请联系去疾
+"APCommonUI:%.0f秒后重试" = "%.0f秒";
+"APCommonUI:APCheckBox.checked" = "選択した：";
+"APCommonUI:APCheckBox.unchecked" = "未選択：";
+"APCommonUI:APExceptionView.alert" = "エラー\n再試行";
+"APCommonUI:APExceptionView.empty" = "内容は未記入";
+"APCommonUI:APExceptionView.networkError" = "ネットワークの状態が良くない\nネットワーク設定を確認してからもう一度お試しください";
+"APCommonUI:APNextPagePullView.click&load" = "ロード";
+"APCommonUI:APNumericKeyboard.back&delete" = "戻る";
+"APCommonUI:APNumericKeyboard.disappear" = "消える";
+"APCommonUI:APNumericKeyboard.dismissKeyboard" = "数字キーボードを控える";
+"APCommonUI:APSecurityCode.securityCode" = "コード";
+"APCommonUI:APToastView.load" = "%.0f%%ロード";
+"APCommonUI:EGORefresh.current" = "現在の時間 ";
+"APCommonUI:EGORefresh.last" = "前回の更新 ";
+"APCommonUI:EGORefresh.pull&load" = "アップで多く";
+"APCommonUI:EGORefresh.pull&refresh" = "ダウンで刷新";
+"APCommonUI:EGORefresh.release&refresh" = "離すとリフレッシュできる";
+"APCommonUI:Login.forgotPassword" = "PW忘れた？";
+"APCommonUI:Login.password" = "ログインのパスワード";
+"APCommonUI:SMS.code" = "検証コード";
+"APCommonUI:SMS.inputCode" = "コードの入力";
+"APCommonUI:SMS.resendAfter" = "%.0f秒";
+"APCommonUI:SMS.resendCode" = "コード再送";
+"APCommonUI:SMS.sendCode" = "コード発送";
+"APCommonUI:什么都没有" = "何もない";
+"APCommonUI:再试一次" = "もう一度試す";
+"APCommonUI:刷新" = "刷新";
+"APCommonUI:加载中" = "読み込み中…";
+"APCommonUI:取消" = "取消";
+"APCommonUI:完成" = "完了";
+"APCommonUI:忙不过来了，客官请稍候" = "忙しすぎるよ、少々お待ちください";
+"APCommonUI:搜索" = "検索";
+"APCommonUI:注册" = "登録";
+"APCommonUI:清除" = "削除";
+"APCommonUI:登录" = "ログイン";
+"APCommonUI:确定" = "確認";
+"APCommonUI:网络不给力" = "ネット悪い";
+"APCommonUI:网络无法连接" = "ネット接続不可です";
+"APCommonUI:请检查你的手机是否联网" = "携帯がネット接続したか";
+"APCommonUI:返回" = "戻る";
+"APCommonUI:重新尝试" = "もう一度試す";
+"APCommonUI:重试" = "再試";
+"APCommonUI:顾客太多，客官请稍候" = "顧客が多すぎるよ、少々お待ちください";
+
